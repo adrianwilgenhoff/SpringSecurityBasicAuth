@@ -1,7 +1,9 @@
 package com.aew.users.domain;
 
+import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
@@ -27,6 +29,8 @@ import java.io.Serializable;
 @Entity
 @Table(name = "authority")
 @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
+@AllArgsConstructor
+@NoArgsConstructor
 public class Authority implements Serializable {
 
     private static final long serialVersionUID = 1L;
